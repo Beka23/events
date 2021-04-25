@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>COUNTY FAIR</title>
+    <style>
+     h1 {text-align: center;}
+     p {text-align: center;}
+     div {text-align: center;}
+</style>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="banner">
+      <h1 id="banner-header">COUNTY FAIR</h1>
+      
+    </div>
+
+    <ul class="nav">
+      <li><%= link_to "Events", events_path %></li>
+      <li><%= link_to "Sign Up For an Event", new_signup_path %></li>
+      
+
+
+      <% if @current_visitor %>
+        <li class="right"><%= link_to "logout", logout_path, method: :delete  %></li>
+         <li class="right"><%= link_to "See Your Signups", signups_path %></li>
+        <li class="right">Welcome <%= @current_visitor.username %></li>
+
+      <% else %>
+        <li class="right"><%= link_to "Sign Up", new_visitor_path %></li>
+        <li class="right"><%= link_to "Login", new_login_path %></li>
+      <% end %>
+    </ul>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+  </body>
+</html>
+
+
+
+
+

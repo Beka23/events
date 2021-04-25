@@ -1,0 +1,24 @@
+<div class="events_header">
+<h1> Check Out All the Events at the County Fair! </h1>
+</div>
+<h3><b> <%= link_to "Click Here To Sign Up For An Event!", new_signup_path %> </b></h3>
+
+<div class='index-container'>
+<ul>
+<% @events.each do |event| %>
+<div class='index-tile'>
+<h3><%= link_to event.title, event_path(event) %> </h3>
+<b> </b> <%= event.description %> 
+<br>
+<br>
+</div>
+<% end %>
+</ul> 
+</div>
+
+
+
+
+
+
+

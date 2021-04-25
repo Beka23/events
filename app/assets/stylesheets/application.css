@@ -1,0 +1,177 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require animate 
+ */
+ 
+
+    body {
+    /* background-color: black; */
+    background-image: url('background.jpeg');
+    background-size: 1300px;
+    }
+
+    .banner {
+      width: 50%;
+      height: 260px;
+      line-height: 200px;
+      text-align: center;
+      background-image: url("https://i.pinimg.com/originals/9e/cf/ed/9ecfeda6419e40faeaeb497f2b377e5b.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0px auto;
+    }
+ 
+    #banner-header {
+     margin: 0px;
+     font-size: 5em;
+     color: transparent;
+     -webkit-text-stroke: 2px rgb(244, 247, 248);
+     /* line-height: 200px; */
+   }
+  
+    .nav {
+     background-color: rgba(179, 176, 179, 0.8);
+     
+     height: 30px;
+     width: 90%;
+     margin: 0px auto;
+     padding: 0px;
+   }
+   
+    .nav li {
+      /* border: 1px solid rgb(247, 244, 244); */
+      display: inline-block;
+      line-height: 30px;
+      padding: 0px 15px;
+      margin: 0px;
+   
+    }
+   
+    .nav li:hover {
+      background-color: rgb(135, 224, 240); 
+      transition: 0.1s;
+    }
+   
+    .nav li a {
+     text-decoration: none;
+     color: rgb(26, 25, 25);
+     font-weight: 800;;
+   }
+   
+   .right {
+     float: right;
+   }
+ 
+ .container {
+   margin: 5px auto;
+   max-width: 87%;
+   background-color: rgba(0, 0, 0, 0.774);
+   padding: 10px;
+   border-radius: 25px;
+   height: 100%;
+
+ }
+ 
+ .form-container {
+   max-width: 300px;
+   margin: 0px auto;
+   background-color: rgba(92, 169, 199, 0.2);
+   padding: 20px;
+   border-radius: 25px;
+   text-align: center;
+   color: white;
+ }
+
+ .form-input {
+   margin-top: 10px;
+ }
+ 
+  .index-container {
+   font-size: larger;
+ }
+ 
+ .index-tile {
+   background-color: rgba(126, 126, 126, 0.2);
+   text-align: center;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 25px; 
+   font-weight: bolder;
+   color: rgb(226, 218, 218);
+ }
+
+ .index-tile a {
+  color: rgb(92, 172, 175);
+  font-size: larger;
+  font-family: cursive;
+}
+ 
+ .index-tile:hover {
+   border: 3px solid rgb(135, 224, 240); 
+   background-color: rgba(76, 206, 238, 0.2);
+ }
+
+ a {
+  color: rgb(246, 246, 250);
+  text-decoration: none;
+}
+
+.events_show {
+  color: rgb(63, 198, 216);
+  font-family: fantasy;
+}
+
+.signups_new {
+  color: white;
+}
+
+.signups_show {
+  color:white;
+}
+
+.events_header {
+  -webkit-text-stroke: 2px goldenrod;
+  /* color: goldenrod; */
+  font-family: fantasy;
+  font-size: larger;
+  animation: shake;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.CONFIRMATION_HEADER {
+  color: rgb(44, 180, 214);
+  animation: bounceInDown;
+  animation-duration: 1s;
+}
+
+.CONFIRMATION_event {
+  color: rgb(44, 180, 214);
+  animation: bounceInDown;
+  animation-duration: 3s;
+}
+
+.CONFIRMATION_time {
+  color: rgb(44, 180, 214);
+  animation: bounceInDown;
+  animation-duration: 5s;
+}
+
+.CONFIRMATION_people {
+  color: rgb(44, 180, 214);
+  animation: bounceInDown;
+  animation-duration: 6s;
+}
+

@@ -1,0 +1,26 @@
+<div class="CONFIRMATION_HEADER">
+<h1>SIGNUP CONFIRMATION PAGE</h1> <br><br>
+</div>
+<div class="signups_show">
+<strong> You have signed up for: </strong> 
+<div class="CONFIRMATION_event">
+ <h3><%= @signup.event.title.upcase  %><br> </h3>
+ </div>
+<strong> At the following time slot: </strong> 
+<div class="CONFIRMATION_time">
+ <h3><%= @signup.time %><br> </h3>
+ </div>
+<strong> For this many people: </strong>
+<div class="CONFIRMATION_people">
+ <h3><%= @signup.number_of_people %><br> </h3>
+ </div>
+</div>
+<br>
+<br>
+<%= link_to "Edit Signup", edit_signup_path %><br>
+<br>
+<%= link_to "See All Your Signups", signups_path %>
+<br>
+<br>
+<%= link_to 'Cancel Your Signup', signup_path(@signup),
+            data: {:confirm => 'Are you sure?'}, :method => :delete %>
