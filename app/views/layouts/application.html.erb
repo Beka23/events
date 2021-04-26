@@ -28,7 +28,7 @@
 
       <% if @current_visitor %>
         <li class="right"><%= link_to "logout", logout_path, method: :delete  %></li>
-         <li class="right"><%= link_to "See Your Signups", signups_path %></li>
+         <li class="right"><%= link_to "See your signups", signups_path %></li>
         <li class="right">Welcome <%= @current_visitor.username %></li>
 
       <% else %>
